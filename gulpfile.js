@@ -36,13 +36,13 @@ jsonSources = [outputDir + '/js/*.json'];
 fontSources = [outputDir + 'fonts/*.*'];
 
 
-gulp.task('js', function(){
+/*gulp.task('js', function(){
 	gulp.src(jsSources)
 		.pipe(concat('script.js'))
 		.pipe(gulpif(env === 'production', uglify()))
 		.pipe(gulp.dest(outputDir + '/js'))
 		.pipe(connect.reload())
-});
+});*/
 
 gulp.task('font', function(){
 	gulp.src(fontSources)
@@ -102,4 +102,4 @@ gulp.task('connect', function(){
 	})
 });
 
-gulp.task('default', ['html', 'json', 'js', 'compass', 'connect', 'images', 'watch']);
+gulp.task('default', ['html', 'json', 'compass', 'connect', 'images', 'watch']);
