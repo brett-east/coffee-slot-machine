@@ -29,7 +29,7 @@ if (env === 'development'){
 	sassStyle = 'compact';
 }
 	
-jsSources = ['js/bootstrap.min.js'];
+jsSources = ['builds/development/js/*.js'];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '/*.html'];
 jsonSources = [outputDir + '/js/*.json'];

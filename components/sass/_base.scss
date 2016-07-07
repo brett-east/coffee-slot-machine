@@ -1,0 +1,170 @@
+// Styles
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: #eee;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 40px;  
+}
+
+.slot-header {
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 20px 20px;
+  border-radius: 8px 8px 0 0;
+    background-image: linear-gradient(
+    -25deg,
+    #363237,
+    #363237 56%,
+    #555 56%,
+    #555 60%,
+    #666 60%,
+    #666
+  );
+}
+
+.fa-heart {
+  color: #f00;
+}
+
+.slot-body {
+  background-image: linear-gradient(
+    -25deg,
+    #999,
+    #999 85%,
+    #aaa 85%,
+    #aaa 86%,
+    #bbb 86%,
+    #bbb
+  );
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  min-height: 700px;
+  padding: 50px calc((100% - 660px)/2);
+  position: relative;
+  
+  .fa-angle-double-right, .fa-angle-double-left {
+    position: absolute;
+    font-size: 100px;
+    line-height: 100px;
+    top: calc(50% - 50px);
+    color: #e5cfcf;
+  }
+
+  .fa-angle-double-right {
+    left: 60px;
+  }
+  
+  .fa-angle-double-left {
+    right: 60px;
+  }
+
+}
+
+.wheel {
+  width: 200px;
+  height: 600px;
+  box-shadow: inset 0px 0px 6px black;
+  float: left;
+  margin: 0 10px 20px;
+  background-repeat: repeat-y;
+  background-position: 0 0;
+  position: relative;
+  &:before {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: $wheel-gradient;
+  }
+}
+
+.wheel1 {
+  @extend .wheel;
+  background-image: url('/images/first-reel.jpg');
+}
+
+.wheel2 {
+  @extend .wheel;
+  background-image: url('/images/second-reel.jpg');
+}
+
+.wheel3 {
+  @extend .wheel;
+  background-image: url('/images/third-reel.jpg');
+}
+
+.slot-bottom {
+  background-color: #8a8a8a;
+  width: 100%;
+  padding: 40px 0;
+  min-height: 200px;
+}
+
+.results {
+  width: 62.5%;
+  margin: 0 2.5% 0 5%;
+  height: 100px;
+  clear: both;
+  float: left;
+  background: #fff;
+  display: table;
+  p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+#spin-button {
+  margin: 0 5% 0% 2.5%;
+  width: 22.5%;
+  height: 100px;
+  float: left;
+  display: table;
+  background-color: #000;
+  cursor: pointer;
+  &:hover, &:focus {
+    background-color: #222;
+  }
+  &:active {
+    background-color: #444;
+  }
+}
+
+.btn-text {
+  font-size: 3em;
+  font-weight: bold;
+  color: #fff;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

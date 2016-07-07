@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Blank Doc</title>
+    <title>Thumbtack Hot Drink Slot Machine</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,11 +23,28 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="wrapper">
+      <div class="slot-header">
+        <h1>We <i class="fa fa-heart"></i> Hot Drinks</h1>
+      </div>
+      <div class="slot-body">
+        <i class="fa fa-angle-double-right fa-5x" aria-hidden="true"></i>
+        <div class="wheel1"></div>
+        <div class="wheel2"></div>
+        <div class="wheel3"></div>
+        <i class="fa fa-angle-double-left fa-5x" aria-hidden="true"></i>
+      </div><!-- .slot-bosy -->
+      <div class="slot-bottom">
+        <div class="results"></div>
+        <div id="spin-button"><p class="btn-text">Spin</p></div>
+      </div><!-- .slot-bottom -->
+      
+    </div><!-- .wrapper -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
